@@ -7,8 +7,6 @@ sharing: true
 footer: false
 ---
 
-{% img images/IMG_20121215_161044.jpg 790 180 %}
-
 A passionate developer hailing from the shady lands of Tijuana,Mexico.
 
 Loves learning about programing,engineering and design.
