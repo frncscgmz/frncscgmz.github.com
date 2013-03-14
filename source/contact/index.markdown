@@ -9,6 +9,8 @@ footer: false
 Contact this Handsome Rogue
 ---------------------------
 
-You can contact me directly via [Email](mailto:about.blanked@gmail.com)
+*  [GitHub](https://github.com/frncscgmz) 
+*  [Twitter](https://twitter.com/accdntprn)
+*  [LinkedIn](https://linkedin.com/pub/francisco-gomez/54/559/38a/)
 
-I'm also at [GitHub](https://github.com/frncscgmz).
+You can contact me directly via [Email](mailto:about.blanked@gmail.com).
