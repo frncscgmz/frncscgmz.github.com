@@ -1,0 +1,19 @@
+---
+layout: post
+title: "First"
+date: 2013-03-18 17:22
+comments: true
+categories: 
+---
+
+After days of inner debating I've decided to finally start writing again.
+This is like the 3rd blog I've ever started and hopefully I'll keep it around for a little longer.
+
+This blog will be dedicated to my ramblings about coding and everything in between(languages, frameworks,
+technologies, etc.).
+
+I'm no expert on the subject, but I really like learning new things and I would love to share all the little
+things I learn everyday, so If you see something wrong in this blog (besides my shaky english) you're free to point it
+out on the comments section.
+
+Thank you :-)
