@@ -2,7 +2,11 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://frncscgmz.github.com/blog/2013/03/18/first/</loc>
+<<<<<<< HEAD
         <lastmod>2013-03-18T17:48:43-07:00</lastmod>
+=======
+        <lastmod>2013-03-18T17:35:59-07:00</lastmod>
+>>>>>>> origin/source
     </url>
     <url>
         <loc>http://frncscgmz.github.com/robots.txt</loc>
@@ -18,10 +22,18 @@
     </url>
     <url>
         <loc>http://frncscgmz.github.com/blog/archives/</loc>
+<<<<<<< HEAD
         <lastmod>2013-03-18T17:48:43-07:00</lastmod>
     </url>
     <url>
         <loc>http://frncscgmz.github.com/blog/</loc>
         <lastmod>2013-03-18T17:48:43-07:00</lastmod>
+=======
+        <lastmod>2013-03-18T17:35:59-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://frncscgmz.github.com/blog/</loc>
+        <lastmod>2013-03-18T17:35:59-07:00</lastmod>
+>>>>>>> origin/source
     </url>
 </urlset>

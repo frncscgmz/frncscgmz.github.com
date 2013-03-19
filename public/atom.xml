@@ -4,7 +4,11 @@
   <title><![CDATA[frncscgmz]]></title>
   <link href="http://frncscgmz.github.com/atom.xml" rel="self"/>
   <link href="http://frncscgmz.github.com/"/>
+<<<<<<< HEAD
   <updated>2013-03-18T17:48:50-07:00</updated>
+=======
+  <updated>2013-03-18T17:37:07-07:00</updated>
+>>>>>>> origin/source
   <id>http://frncscgmz.github.com/</id>
   <author>
     <name><![CDATA[Francisco Gomez]]></name>
@@ -21,7 +25,11 @@
     <content type="html"><![CDATA[<p>After days of inner debating I&#8217;ve decided to finally start writing again.
 This is like the 3rd blog I&#8217;ve ever started and hopefully I&#8217;ll keep it around for a little longer.</p>
 
+<<<<<<< HEAD
 <p>This blog will be dedicated to my ramblings about coding and everything in between(languages, frameworks,
+=======
+<p>This blog will be dedicated to my ramblings about coding and everything in between(languagues, frameworks,
+>>>>>>> origin/source
 technologies, etc.).</p>
 
 <p>I&#8217;m no expert on the subject, but I really like learning new things and I would love to share all the little
