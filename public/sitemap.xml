@@ -1,23 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://frncscgmz.github.com/blog/2013/03/18/first/</loc>
+        <lastmod>2013-03-18T17:35:59-07:00</lastmod>
+    </url>
+    <url>
         <loc>http://frncscgmz.github.com/robots.txt</loc>
         <lastmod>2013-02-26T23:10:58-08:00</lastmod>
     </url>
     <url>
         <loc>http://frncscgmz.github.com/contact/</loc>
-        <lastmod>2013-03-13T23:03:07-07:00</lastmod>
+        <lastmod>2013-03-15T23:54:59-07:00</lastmod>
     </url>
     <url>
         <loc>http://frncscgmz.github.com/</loc>
-        <lastmod>2013-03-13T22:49:28-07:00</lastmod>
+        <lastmod>2013-03-18T16:45:18-07:00</lastmod>
     </url>
     <url>
         <loc>http://frncscgmz.github.com/blog/archives/</loc>
-        <lastmod>2013-02-26T23:10:58-08:00</lastmod>
+        <lastmod>2013-03-18T17:35:59-07:00</lastmod>
     </url>
     <url>
         <loc>http://frncscgmz.github.com/blog/</loc>
-        <lastmod>2013-02-26T23:10:58-08:00</lastmod>
+        <lastmod>2013-03-18T17:35:59-07:00</lastmod>
     </url>
 </urlset>

@@ -13,4 +13,4 @@ Contact this Handsome Rogue
 *  [Twitter](https://twitter.com/accdntprn)
 *  [LinkedIn](https://linkedin.com/pub/francisco-gomez/54/559/38a/)
 
-You can contact me directly via [Email](mailto:about.blanked@gmail.com).
+You can contact me directly via [Email](mailto:mail@frncscgmz.me).

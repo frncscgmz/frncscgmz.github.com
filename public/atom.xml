@@ -4,7 +4,7 @@
   <title><![CDATA[frncscgmz]]></title>
   <link href="http://frncscgmz.github.com/atom.xml" rel="self"/>
   <link href="http://frncscgmz.github.com/"/>
-  <updated>2013-03-13T23:11:54-07:00</updated>
+  <updated>2013-03-18T17:37:07-07:00</updated>
   <id>http://frncscgmz.github.com/</id>
   <author>
     <name><![CDATA[Francisco Gomez]]></name>
@@ -12,5 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First]]></title>
+    <link href="http://frncscgmz.github.com/blog/2013/03/18/first/"/>
+    <updated>2013-03-18T17:22:00-07:00</updated>
+    <id>http://frncscgmz.github.com/blog/2013/03/18/first</id>
+    <content type="html"><![CDATA[<p>After days of inner debating I&#8217;ve decided to finally start writing again.
+This is like the 3rd blog I&#8217;ve ever started and hopefully I&#8217;ll keep it around for a little longer.</p>
+
+<p>This blog will be dedicated to my ramblings about coding and everything in between(languagues, frameworks,
+technologies, etc.).</p>
+
+<p>I&#8217;m no expert on the subject, but I really like learning new things and I would love to share all the little
+things I learn everyday, so If you see something wrong in this blog (besides my shaky english) you&#8217;re free to point it
+out on the comments section.</p>
+
+<p>Thank you :-)</p>
+]]></content>
+  </entry>
   
 </feed>
