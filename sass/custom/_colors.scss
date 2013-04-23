@@ -45,7 +45,7 @@
 //My changes
 // change the background colors
 //
-/*html {
+html {
   background: #fff !important;
 }
 body {
@@ -58,18 +58,19 @@ body {
 }
 $main-bg: #ffffff !default;
 $page-bg: #ffffff !default;
-*/
+$link-color: lighten(#000, 3) !default;
+$link-color-visited: darken($link-color,58) !default;
 
-// change the header colors
-//
+/** change the header colors */
+
 $header-bg: #fff;
 $title-color: #000000 !default;
 $text-color: #333 !default;
 $text-color-light: #777 !default;
 $subtitle-color: darken($header-bg, 58);
 
-// change the nav bar
-//
+/** change the nav bar */
+
 $nav-bg: #fff;
 $nav-bg-front: #fff;
 $nav-bg-back: #fff;
@@ -81,8 +82,8 @@ $nav-border-bottom: darken($nav-bg, 33) !default;
 $nav-border-left: darken($nav-bg, 11) !default;
 $nav-border-right: lighten($nav-bg, 7) !default;
 
-// change the footer
-//
+/** change the footer */
+
 $footer-color: #888 !default;
 $footer-bg: #fff !default;
 $footer-bg-front: #fff !default;
@@ -94,4 +95,3 @@ $footer-border-bottom: darken($footer-bg, 15) !default;
 $footer-link-color: darken($footer-bg, 38) !default;
 $footer-link-color-hover: darken($footer-color, 25) !default;
 $page-border-bottom: darken($footer-bg, 5) !default;
-

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[frncscgmz]]></title>
-  <link href="http://frncscgmz.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Unix | frncscgmz]]></title>
+  <link href="http://frncscgmz.github.com/blog/categories/unix/atom.xml" rel="self"/>
   <link href="http://frncscgmz.github.com/"/>
   <updated>2013-04-22T21:28:15-07:00</updated>
   <id>http://frncscgmz.github.com/</id>
@@ -49,7 +49,7 @@ to manipulate the results of the program.</p>
 <p>regexp is the string of characters or regular expression the program needs to
 match.</p>
 
-<p>And finally, [files] represent well&#8230;the files where you want to look for that
+<p>And finally, [files] represent well...the files where you want to look for that
 particular regexp.</p>
 
 <p>If I want to look for a word on a specific file, I would have to use grep in
@@ -59,7 +59,7 @@ its most basic form.</p>
 grep conf Rakefile
 </code></p>
 
-<p>This will print every line that matches the given pattern (&#8220;conf&#8221;) inside Rakefile.</p>
+<p>This will print every line that matches the given pattern ("conf") inside Rakefile.</p>
 
 <p>You need to look for more than one match? No problem, just append a pipe (|) character
 between each match in the regexp argument.</p>
@@ -89,7 +89,7 @@ only prints in which files the pattern matched.</p>
 grep -l '^#include' /usr/include/*
 </code></p>
 
-<p>-r : So you have a bunch of files where you want to search, but you don&#8217;t want
+<p>-r : So you have a bunch of files where you want to search, but you don't want
 to apply grep to each one. You can recursively search in a directory for a
 pattern in all their directories.</p>
 
@@ -98,14 +98,14 @@ grep -r 'ERROR' /usr/local/tomcat/log/
 </code></p>
 
 <p>-v : If you need to dig into a file where theres a pattern that repeats
-in every line but you need to find where this pattern doesn&#8217;t appear.</p>
+in every line but you need to find where this pattern doesn't appear.</p>
 
 <p><code>
 grep -v 'conf' Rakefile
 </code></p>
 
 <p>-w : Grep by default always tries to match the pattern even if its between other
-words (&#8220;conf&#8221; matches in &#8220;config&#8221;,&#8221;configs&#8221;,&#8221;ifconf&#8221;).
+words ("conf" matches in "config","configs","ifconf").
 If you need to force grep to just select the lines where the pattern matches
 the word do:</p>
 
@@ -117,7 +117,7 @@ grep -w "conf" Rakefile
 
 <p>Like any good Unix program, grep supports pipping between different programs that
 share a common text output.
-Say, you&#8217;re tailing in real time a log, but you want to print only the lines that
+Say, you're tailing in real time a log, but you want to print only the lines that
 contain a certain tag.</p>
 
 <p><code>
@@ -128,9 +128,9 @@ tail -f MyLog.log | grep DEBUG
 
 <p>Some more color in your terminal its always a good thing, it helps highlight
 the things that matter in a sea of white garbled text.
-You could pass the flag &#8211;color (&#8211;colour for our British friends) every time you
+You could pass the flag --color (--colour for our British friends) every time you
 use it, but thats annoying. Instead, add this to your shell alias configuration
-(bash_aliases if you&#8217;re using Bash).</p>
+(bash_aliases if you're using Bash).</p>
 
 <p><code>
 alias grep='grep --color=auto'
@@ -138,27 +138,8 @@ alias grep='grep --color=auto'
 
 <p>This adds out color flag in an alias every time we use it.</p>
 
-<p>This isn&#8217;t intended to be a full fletched guide on grep, but if you need more
+<p>This isn't intended to be a full fletched guide on grep, but if you need more
 knowledge on the subject you can always check the <a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?grep">man page</a> on grep.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[First]]></title>
-    <link href="http://frncscgmz.github.com/blog/2013/03/18/first/"/>
-    <updated>2013-03-18T17:22:00-07:00</updated>
-    <id>http://frncscgmz.github.com/blog/2013/03/18/first</id>
-    <content type="html"><![CDATA[<p>After days of inner debating I&#8217;ve decided to finally start writing again.
-This is like the 3rd blog I&#8217;ve ever started and hopefully I&#8217;ll keep it around for a little longer.</p>
-
-<p>This blog will be dedicated to my ramblings about coding and everything in between(languagues, frameworks,
-technologies, etc.).</p>
-
-<p>I&#8217;m no expert on the subject, but I really like learning new things and I would love to share all the little
-things I learn everyday, so If you see something wrong in this blog (besides my shaky english) you&#8217;re free to point it
-out on the comments section.</p>
-
-<p>Thank you :-)</p>
 ]]></content>
   </entry>
   
