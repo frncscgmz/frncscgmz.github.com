@@ -4,7 +4,7 @@
   <title><![CDATA[frncscgmz]]></title>
   <link href="http://frncscgmz.github.com/atom.xml" rel="self"/>
   <link href="http://frncscgmz.github.com/"/>
-  <updated>2013-04-22T21:28:15-07:00</updated>
+  <updated>2013-04-26T15:48:30-07:00</updated>
   <id>http://frncscgmz.github.com/</id>
   <author>
     <name><![CDATA[Francisco Gomez]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hofstadter's law]]></title>
+    <link href="http://frncscgmz.github.com/blog/2013/04/26/hofstadters-law/"/>
+    <updated>2013-04-26T15:14:00-07:00</updated>
+    <id>http://frncscgmz.github.com/blog/2013/04/26/hofstadters-law</id>
+    <content type="html"><![CDATA[<blockquote><p>It always takes longer than you expect, even when you take into account Hofstadter&#8217;s Law.</p><footer><strong>Douglas Hofstadter</strong> <cite>Gödel Escher Bach: An Eternal Golden Braid</cite></footer></blockquote>
+
+
+<p>This quote will ring true to any programer who as dealt with a manager with their favorite
+project managment tool open and the empty &#8220;Due date&#8221; field.</p>
+
+<p>Even with my limited experience in the field, I&#8217;ve come to dread project estimation.</p>
+
+<p>There&#8217;s never an easy answer to it, theres tons of diferent techniques on the internet
+on how deal with it put in the end theres no silver bullet.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Grep for the clueless]]></title>
