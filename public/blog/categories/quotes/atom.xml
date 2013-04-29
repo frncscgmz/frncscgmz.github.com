@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Quotes | frncscgmz]]></title>
+  <link href="http://frncscgmz.github.com/blog/categories/quotes/atom.xml" rel="self"/>
+  <link href="http://frncscgmz.github.com/"/>
+  <updated>2013-04-29T00:22:15-07:00</updated>
+  <id>http://frncscgmz.github.com/</id>
+  <author>
+    <name><![CDATA[Francisco Gomez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hofstadter's law]]></title>
+    <link href="http://frncscgmz.github.com/blog/2013/04/26/hofstadters-law/"/>
+    <updated>2013-04-26T15:14:00-07:00</updated>
+    <id>http://frncscgmz.github.com/blog/2013/04/26/hofstadters-law</id>
+    <content type="html"><![CDATA[<p><blockquote><p>It always takes longer than you expect, even when you take into account Hofstadter's Law.</p><footer><strong>Douglas Hofstadter</strong> <cite>Gödel Escher Bach: An Eternal Golden Braid</cite></footer></blockquote></p>
+]]></content>
+  </entry>
+  
+</feed>
