@@ -4,7 +4,7 @@
   <title><![CDATA[frncscgmz]]></title>
   <link href="http://frncscgmz.github.com/atom.xml" rel="self"/>
   <link href="http://frncscgmz.github.com/"/>
-  <updated>2013-05-28T22:59:25-07:00</updated>
+  <updated>2013-09-25T10:46:16-07:00</updated>
   <id>http://frncscgmz.github.com/</id>
   <author>
     <name><![CDATA[Francisco Gomez]]></name>
@@ -12,6 +12,131 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hack a Search Engine: DuckDuckGo and My First Plugin]]></title>
+    <link href="http://frncscgmz.github.com/blog/2013/09/25/hack-a-search-engine-duckduckgo-and-my-first-plugin/"/>
+    <updated>2013-09-25T10:50:00-07:00</updated>
+    <id>http://frncscgmz.github.com/blog/2013/09/25/hack-a-search-engine-duckduckgo-and-my-first-plugin</id>
+    <content type="html"><![CDATA[<p><img src="https://s3-us-west-2.amazonaws.com/frncscgmz-blog/ddg.png"></p>
+
+<p>For about half a year ago I&#8217;ve been experimenting with the search engine
+<strong>DuckDuckGo</strong>, which main selling point is that they don&#8217;t keep records of your
+searches and value a lot the privacy of their users, unlike Google.
+For me this was interesting in the beginning, but what really sold me was
+their Open Source platform, which gives anyone the opportunity to contribute
+by building small functional plugins called <strong>Goodies</strong>.</p>
+
+<p>These Goodies come in various flavors, the most basic ones are the regular
+Goodies, Perl scripts that may take some values, make some calculations and
+return a small snippet of information (basic arithmetic,spelling,
+word anagrams, among others).</p>
+
+<p>The other one is called a <strong>Spice plugin</strong>, which works a lot like a regular
+Goodie, takes a couple of values with some trigger values as well, but the
+difference and advantage here is that this kind of plugin is able to
+make calls to external API&#8217;s, take the response, make a callback to the
+frontend and manipulate it using JavaScript to display it on the search
+results.
+Spice plugins make up for some of the most interesting live plugins on DDG, but
+they&#8217;re also the most difficult ones to develop, so I&#8217;ll try to show an
+example of one of the regular Goodies I made.</p>
+
+<p>One thing first, developing a Goodie requires some knowledge on the <em>Perl
+programming language</em>, but It&#8217;s not something you can&#8217;t pick up quickly as
+you go or something really deep. I had no previous experience with Perl,
+save from some quick and dirty one-liners. But the examples and tutorial
+on the official Docs make it very easy for you to learn en come up with
+something fast.</p>
+
+<p>The DDG platform has the advantage that it leverages the full capabilities of
+<strong>CPAN</strong>, you can download and use any supported module on CPAN, all this as
+long as each new module is indicated on the requirements file of the Goodie.</p>
+
+<p>A Goodie file is divided into four logical parts: imports and dependencies,
+plugin info, trigger definition and query handle.</p>
+
+<p>The Goodie starts as any other Perl program, with the definition of the
+program package which must follow the convention:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="nb">package</span> <span class="nn">DDG::Goodie::</span><span class="n">YourProgram</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Any Goodie should also import the DDG standard package and any other
+dependency:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="k">use</span> <span class="nn">DDG::</span><span class="n">Goodie</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The plugin info is nothing more than the meta-data, developer information,
+type of plugin, description, repository url, etc.</p>
+
+<p>Trigger definition is one of the key parts of the program, out plugin should
+respond to a set of predefined keywords. You can defined in what part of the
+search query should be located (<em>start ,end, startend ,any</em>).</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="n">triggers</span> <span class="n">start</span> <span class="o">=&gt;</span> <span class="s">&#39;keyword&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The handle query is the core of our plugin, this is a subroutine which is
+called once one of the triggers defined is activated.
+Here you can pretty much do anything you need with your search inputs
+as long as the returned value is a string.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="n">handle</span> <span class="n">remainder</span> <span class="o">=&gt;</span> <span class="k">sub </span><span class="p">{</span>
+</span><span class='line'>  <span class="k">return</span> <span class="s">&#39;String: &#39;</span> <span class="o">.</span> <span class="nv">$_</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here we use the special variable <strong>$_</strong> which stores the default input to
+the subroutine and we return the complete concatenated string (using . to
+concatenate).</p>
+
+<p>The lonely <strong>return</strong> function just makes sure that our subroutine returns
+something even if its nothing (I&#8217;m aware that makes no sense :-).</p>
+
+<p>After all this, all Perl packages on DDG need to return true when loaded
+correctly. So you need to add the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="mi">1</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Yes, I wasted a whole code block on that, but its necessary.</p>
+
+<p>And thats it! Obviously this wont work on it&#8217;s own.
+DDG has its own platform for testing plugins of all kinds, but that goes
+over the scope of this poor article.</p>
+
+<p>DDG&#8217;s platform has some <a href="https://github.com/duckduckgo/duckduckgo/blob/master/documentation/goodies_overview.md">excellent documentation</a>
+which covers every detail about the development of plugins and how to deploy them.
+Most of their work is at GitHub, and from personal experience,
+the community is really friendly and helpful. They made my first contribution a breeze.</p>
+
+<p>They also have a community page where people can contribute on non-coding tasks
+by giving ideas on new plugins, feedback and more.</p>
+
+<p>This article may seam preachy, but this project made me very exited because
+it was one of the firsts OSS projects I&#8217;ve ever contributed on and it was
+such a joyful experience that I wish to keep doing it for a long time.</p>
+
+<p>You can checkout the <a href="https://github.com/duckduckgo/zeroclickinfo-goodies">Goodies repo</a>
+at Github, for some examples.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hofstadter's law]]></title>
