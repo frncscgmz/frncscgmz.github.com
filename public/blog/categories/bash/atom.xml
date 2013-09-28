@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: bash | frncscgmz]]></title>
+  <link href="http://frncscgmz.github.com/blog/categories/bash/atom.xml" rel="self"/>
+  <link href="http://frncscgmz.github.com/"/>
+  <updated>2013-09-27T23:57:04-07:00</updated>
+  <id>http://frncscgmz.github.com/</id>
+  <author>
+    <name><![CDATA[Francisco Gomez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Colored cat output]]></title>
+    <link href="http://frncscgmz.github.com/blog/2013/09/27/colored-cat-output/"/>
+    <updated>2013-09-27T23:07:00-07:00</updated>
+    <id>http://frncscgmz.github.com/blog/2013/09/27/colored-cat-output</id>
+    <content type="html"><![CDATA[<p>Today, while checking some old scripts laying around my home directories I found
+myself "cat-ing" a ton of them. <strong>cat</strong> is mighty useful, but It could really use
+a colored output.</p>
+
+<p>I found a small Python program called <strong>Pygmentize</strong>, which is nothing more than
+a syntax highlighter that supports a lot of programming languages and file
+formats.</p>
+
+<p>If you're on Linux and using apt you can find the package by the name of
+<em>python-pygments</em>.</p>
+
+<p>Once installed, I just added a simple entry to my <em>bash_aliases</em> file:</p>
+
+<p><code>bash
+alias ccat='pygmentize -g'
+</code></p>
+
+<p>From monochrome to fabulous.</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/frncscgmz-blog/ccat.png"></p>
+]]></content>
+  </entry>
+  
+</feed>

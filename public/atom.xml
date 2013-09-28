@@ -4,7 +4,7 @@
   <title><![CDATA[frncscgmz]]></title>
   <link href="http://frncscgmz.github.com/atom.xml" rel="self"/>
   <link href="http://frncscgmz.github.com/"/>
-  <updated>2013-09-25T10:46:16-07:00</updated>
+  <updated>2013-09-27T23:57:04-07:00</updated>
   <id>http://frncscgmz.github.com/</id>
   <author>
     <name><![CDATA[Francisco Gomez]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Colored cat output]]></title>
+    <link href="http://frncscgmz.github.com/blog/2013/09/27/colored-cat-output/"/>
+    <updated>2013-09-27T23:07:00-07:00</updated>
+    <id>http://frncscgmz.github.com/blog/2013/09/27/colored-cat-output</id>
+    <content type="html"><![CDATA[<p>Today, while checking some old scripts laying around my home directories I found
+myself &#8220;cat-ing&#8221; a ton of them. <strong>cat</strong> is mighty useful, but It could really use
+a colored output.</p>
+
+<p>I found a small Python program called <strong>Pygmentize</strong>, which is nothing more than
+a syntax highlighter that supports a lot of programming languages and file
+formats.</p>
+
+<p>If you&#8217;re on Linux and using apt you can find the package by the name of
+<em>python-pygments</em>.</p>
+
+<p>Once installed, I just added a simple entry to my <em>bash_aliases</em> file:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">ccat</span><span class="o">=</span><span class="s1">&#39;pygmentize -g&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>From monochrome to fabulous.</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/frncscgmz-blog/ccat.png"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hack a Search Engine: DuckDuckGo and My First Plugin]]></title>

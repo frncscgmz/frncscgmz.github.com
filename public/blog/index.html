@@ -9,8 +9,8 @@
   <meta name="author" content="Francisco Gomez">
 
   
-  <meta name="description" content="For about half a year ago I&#8217;ve been experimenting with the search engine
-DuckDuckGo, which main selling point is that they don&#8217;t keep &hellip;">
+  <meta name="description" content="Today, while checking some old scripts laying around my home directories I found
+myself &#8220;cat-ing&#8221; a ton of them. cat is mighty useful, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -50,7 +50,7 @@ DuckDuckGo, which main selling point is that they don&#8217;t keep &hellip;">
   <header role="banner"><hgroup>
   <h1><a href="/">frncscgmz</a></h1>
   
-    <h2>On the Subject of Code and other musings (vowels not included)</h2>
+    <h2>On the Subject of Code and other Musings (vowels not included)</h2>
   
 </hgroup>
 
@@ -72,6 +72,62 @@ DuckDuckGo, which main selling point is that they don&#8217;t keep &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/09/27/colored-cat-output/">Colored Cat Output</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-27T23:07:00-07:00" pubdate data-updated="true">Sep 27<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today, while checking some old scripts laying around my home directories I found
+myself &#8220;cat-ing&#8221; a ton of them. <strong>cat</strong> is mighty useful, but It could really use
+a colored output.</p>
+
+<p>I found a small Python program called <strong>Pygmentize</strong>, which is nothing more than
+a syntax highlighter that supports a lot of programming languages and file
+formats.</p>
+
+<p>If you&#8217;re on Linux and using apt you can find the package by the name of
+<em>python-pygments</em>.</p>
+
+<p>Once installed, I just added a simple entry to my <em>bash_aliases</em> file:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">ccat</span><span class="o">=</span><span class="s1">&#39;pygmentize -g&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>From monochrome to fabulous.</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/frncscgmz-blog/ccat.png"></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
